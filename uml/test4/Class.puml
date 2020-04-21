@@ -1,0 +1,11 @@
+@startuml
+actor 读者
+读者->图书管理系统:login()
+图书管理系统->book:getbookinf()
+图书管理系统->copy_book:check()
+copy_book->Reservation:reservation()
+copy_book->Reservation:getbook()
+copy_book->Reservation:build()
+Reservation-->图书管理系统
+图书管理系统->读者:return result
+@enduml

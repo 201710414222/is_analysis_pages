@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta content="beabd3a60cb436d4" property="wb:webmaster">
+    <title>水滴汽车网_你爱的才是好车_一站式汽车服务平台</title>
+
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="keywords" content="汽车，汽车网，汽车服务，汽车服务平台，水滴汽车网">
+    <meta name="description"
+          content="水滴汽车网您提供4s店全天候在线直播，千万大咖敢问敢答，坚信你爱的才是好车，新车、导购、评测、行业、文化、用车、养车内容热辣更新，是首个汽车全场景一站式汽车服务平台。">
+    <link href="/Public/home/css/public.css" rel="stylesheet">
+    <link href="/Public/common/images/dripcar.ico" rel="shortcut icon" type="image/ico">
+
+    <link href="/Public/home/css/circle/common.css" rel="stylesheet">
+    <link href="/Public/home/css/indexV2/indexs.css" rel="stylesheet">
+    <link href="/Public/home/css/circle/swiper.min.css" rel="stylesheet">
+    <style>
+        .phone_2 ul li {
+            color: #fff;
+
+            float: left
+        }
+
+        .phone_2 ul li a {
+            color: #fff;
+            font-size: 13px;
+            display: block
+        }
+
+        .phone_2 ul li a:hover {
+            color: #1c87f4
+        }
+
+        .phone_2 ul li a img {
+            float: left
+        }
+
+        .phone_2 ul li a span {
+            padding-left: 35px;
+            line-height: 20px;
+        }
+
+        .num_1 img {
+            width: 13px;
+            float: left;
+        }
+
+        .num_1 span {
+            display: block;
+            float: left;
+            padding: 0 0 0 5px;
+        }
+
+        .swiper-pagination1 {
+            margin-left: 518px;
+        }
+
+    </style>
+
+    <script src="https://hm.baidu.com/hm.js?b61adebfa8abb1e3dfc1fce2db8c7b63"></script>
+    <script src="/Public/sa-sdk/sensorsdata.min.js" async=""></script>
+    <script>
+        var domain = document.domain;
+        var project_str = '';
+        if (domain == 'www.dripcar.com') {
+            project_str = 'production';
+        } else {
+            project_str = 'default';
+        }
+    </script>
+    <script>
+        (function (para) {
+            var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script', x = null, y = null;
+            if (typeof (w['sensorsDataAnalytic201505']) !== 'undefined') {
+                return false;
+            }
+            w['sensorsDataAnalytic201505'] = n;
+            w[n] = w[n] || function (a) {
+                return function () {
+                    (w[n]._q = w[n]._q || []).push([a, arguments]);
+                }
+            };
+            var ifs = ['track', 'quick', 'register', 'registerPage', 'registerOnce', 'clearAllRegister', 'trackSignup', 'trackAbtest', 'setProfile', 'setOnceProfile', 'appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify', 'login', 'logout', 'trackLink', 'clearAllRegister'];
+            for (var i = 0; i < ifs.length; i++) {
+                w[n][ifs[i]] = w[n].call(null, ifs[i]);
+            }
+            if (!w[n]._t) {
+                x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+                x.async = 1;
+                x.src = p;
+                y.parentNode.insertBefore(x, y);
+                w[n].para = para;
+            }
+        })({
+            sdk_url: '/Public/sa-sdk/sensorsdata.min.js',
+            name: 'sensors',
+            server_url: 'https://shuidiqiche.datasink.sensorsdata.cn/sa?project=' + project_str + '&token=1c3b806d45069d0a',
+            //heatmap_url神策分析中点击分析及触达分析功能代码，代码生成工具会自动生成。如果神策代码中 `sensorsdata.min.js` 版本是 1.9.1 及以上版本，这个参数必须配置，低于此版本不需要配置。
+            heatmap_url: "/Public/sa-sdk/heatmap.min.js",
+            //web_url 神策分析中点击分析及触达分析功能会用到此地址，代码生成工具会自动生成。如果神策后台版本及 `sensorsdata.min.js` 均是 1.10 及以上版本，这个参数不需要配置。
+            web_url: "https://shuidiqiche.cloud.sensorsdata.cn/",
+            heatmap: {
+                //是否开启点击图，默认 default 表示开启，自动采集 $WebClick 事件，可以设置 'not_collect' 表示关闭
+                //需要 JSSDK 版本号大于 1.7
+                clickmap: 'default',
+                //是否开启触达注意力图，默认 default 表示开启，自动采集 $WebStay 事件，可以设置 'not_collect' 表示关闭
+                //需要 JSSDK 版本号大于 1.9.1
+                scroll_notice_map: 'default'
+            }
+        });
+        //以异步加载 SDK 为例，神策 SDK 初始化完成，此时调用设置公共属性的方法，来保证之后的事件都有这两个属性。
+        sensors.registerPage({
+            platform_type: 'web',
+            product_line: '水滴汽车'
+        });
+
+        sensors.quick('autoTrack'); //神策系统必须是1.4最新版及以上
+
+        window.onload = function () {
+            // 在页面加载完毕或者也不用加载完毕,定义一个初始时间
+            var start = new Date();
+            // 在页面关闭前,调用sa的track方法
+            window.onunload = function () {
+                var end = new Date();
+                // 如果用户一直不关闭页面，可能出现超大值，可以根据业务需要处理，例如设置一个上限
+                var duration = (end.getTime() - start.getTime()) / 1000;
+
+                if (duration >= 3600) {
+                    duration = 3600;
+                }
+
+                // 定义一个记录页面停留时间的事件pageView,并且保存需要的属性(停留时间和当前页面的地址)
+                sensors.track('pageclose', {
+                    pageStayTime: duration,
+                    pageUrl: window.location.href
+                });
+            };
+        }
+    </script>
+
+    <script>
+        function saEvents(event, property) {
+            sensors.track(event, property);
+        }
+    </script>
+</head>
+
+<body style="background:#f1f0f5">
+<div class="client">
+    <div class="client_1">
+
+        <p class="phone"><a href="/download.html">客户端</a>
+        </p>
+
+        <!-- 判断是否登录 -->
+
+        <div class="phone_1">
+            <ul>
+                <!--未登录-->
+                <li class="ruzhu">
+                    <a href="/auth.html">媒体入驻</a>
+                </li>
+                <li class="deng" style="padding-left: 30px;">
+                    <a href="/login.html">登录</a>
+                </li>
+                <li class="zhu" style="padding-left:30px">
+                    <a href="/reg.html">注册</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="pressing" style="left: 0px; top: 0px; position: fixed; z-index: 39;">
+    <div class="pressing_1">
+        <a href="/"><img alt="logo" src="/Public/home/images/pic_1.png"></a>
+        <ul style="padding-top:14px;">
+            <li class=" raise_title active">
+                <a href="/">首页</a>
+            </li>
+            <li class=" raise_title ">
+                <a href="/xuanche.html">选车</a>
+            </li>
+
+            <li class=" raise_title ">
+                <a href="/quanzi.html">圈子</a>
+            </li>
+            <li class=" raise_title ">
+                <a href="/xinche.html">新车</a>
+            </li>
+            <li class=" raise_title ">
+                <a href="/zixun.html">资讯</a>
+            </li>
+            <li class=" raise_title ">
+                <a href="/ganda.html">问答</a>
+            </li>
+            <!--<li class=" raise_title ">-->
+            <!--<a href="/qingbao.html">值乎</a>-->
+            <!--</li>-->
+            <!--<li><a href="/zhibo.html">直播</a></li>-->
+        </ul>
+        <div class="media">
+            <input class="input_1 _input_keyWord_" onclick="searchButtonClick()" type="text" placeholder="搜索">
+            <p class="sear" id="keyword" onclick="keyword(this)">
+                <img style="width: 21px;padding: 9px 0 0 16px;" src="/Public/home/images/sear.png"></p>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+<div class="pressing-replace" style="width: 100%; height: 67px; display: block;"></div>
+<script src="/Public/common/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script>
+    //倒三角操作
+    $(".my_name").hover(function () {
+//        $(this).parents('.phone_2').find("div").show();
+        $(this).find('img').attr('src', '/Public/home/images/jiao_1.png');
+    }, function () {
+        $(this).find('img').attr('src', '/Public/home/images/jiao.png');
+    })
+
+    $(".user1").hover(function () {
+        if ($('#box-1').is(":hidden")) {
+            $('#box-1').show();
+        } else {
+            $('#box-1').hide();
+        }
+    })
+
+
+    /**
+     * 搜索
+     * @param obj
+     */
+    function keyword(obj) {
+        var keyword = $('._input_keyWord_').val();
+        if (keyword != "") {
+            window.location = '/Home/Index/search.html?keyword=' + keyword;
+        }
+    }
+
+    $('._input_keyWord_').keydown(function (event) {
+        var keyword = $('._input_keyWord_').val();
+        if (event.keyCode == 13) {
+            if (keyword != "") {
+                window.location = '/Home/Index/search.html?keyword=' + keyword;
+            }
+        }
+    });
+
+</script>
+
+
+<div class="center" style="margin-bottom: 58px">
+    <div class="center_1" style="background-color: rgb(240,241,245)">
+        <!--面包屑-->
+
+        <!--左侧-->
+
+        <div class="swiper-container1 top_slide swiper-container-horizontal" style="clear:both;overflow: hidden">
+            <div class="swiper-wrapper" style="transform: translate3d(-5464px, 0px, 0px); transition-duration: 300ms;">
+                <div class="swiper-slide" style="width: 1366px; cursor: pointer;"
+                     onclick="window.location='/zixun/53317.html'">
+                    <img title="" style="width:740px;height: 370px;"
+                         onerror="this.src='/Public/home/images/index-list-default.png'"
+                         src="http://file.dripcar.cn/slide/id_1384_202004031030042631.jpg">
+                </div>
+                <div class="swiper-slide" style="width: 1366px; cursor: pointer;"
+                     onclick="window.location='/shipin/702.html'">
+                    <img title="" style="width:740px;height: 370px;"
+                         onerror="this.src='/Public/home/images/index-list-default.png'"
+                         src="http://file.dripcar.cn/slide/id_1351_202004031034087538.jpg">
+                </div>
+                <div class="swiper-slide" style="width: 1366px; cursor: pointer;"
+                     onclick="window.location='/zixun/53351.html'">
+                    <img title="" style="width:740px;height: 370px;"
+                         onerror="this.src='/Public/home/images/index-list-default.png'"
+                         src="http://file.dripcar.cn/slide/id_1396_202004031049368630.jpg">
+                </div>
+                <div class="swiper-slide swiper-slide-prev" style="width: 1366px; cursor: pointer;"
+                     onclick="window.location='/zixun/53345.html'">
+                    <img title="" style="width:740px;height: 370px;"
+                         onerror="this.src='/Public/home/images/index-list-default.png'"
+                         src="http://file.dripcar.cn/slide/id_1399_202004031056459942.jpg">
+                </div>
+                <div class="swiper-slide swiper-slide-active" style="width: 1366px; cursor: pointer;"
+                     onclick="window.location='/zixun/53342.html'">
+                    <img title="" style="width:740px;height: 370px;"
+                         onerror="this.src='/Public/home/images/index-list-default.png'"
+                         src="http://file.dripcar.cn/slide/id_1379_202004031104212516.jpg">
+                </div>
+            </div>
+
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination1 swiper-pagination-clickable swiper-pagination-bullets"><span
+                    class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+                    class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+                    class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+        </div>
+        <!-- 首页 -->
+        <section id="index-list" data-type="0" data-start="1" data-load="0">
+            <div class="data-list">
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53528.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://file.dripcar.cn/head_photo/android_1575603375805.jpg">
+                            <p class="Say_car">
+                                <span class="authorName _username"
+                                      style="font-size: 16px; color: #333">水滴 殷楠</span><span
+                                    class="authorOccupation _job"></span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">水滴深度：全球汽车产业也已陷入“马尔萨斯陷阱”</p>
+
+                                <div class="Review">
+                                    <p class="Review1">行业</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">201</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num"></span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031904552956.jpg?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="Hot_spot">
+                    <div class="swiper-container sub_model swiper-container-horizontal" id="sub_model">
+                        <div class="Hot_spot1">
+                            <img src="/Public/home/images/indexV2/redW.png">
+                            <p>热点精选</p>
+                        </div>
+                        <a style="display: block;width: 100%;height: 100%" href="/zhuanti.html">
+                            <div class="Hot_spot2">
+                                <p>更多</p>
+                                <img src="/Public/home/images/right.png">
+                            </div>
+                        </a>
+                        <div style="clear: both"></div>
+
+                        <div class="box">
+                            <div class="list">
+
+                                <ul>
+                                    <li class="p6">
+                                        <a href="/zhuanti/482.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/202003311333288801.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">突破存量市场 聚焦全球市场</p>
+                                            <p class="Bullish3">
+                                                水滴汽车<span>03-31</span><span>1235441浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="p5">
+                                        <a href="/zhuanti/480.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/202003271513049264.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">“逆行者”的春天已来</p>
+                                            <p class="Bullish3">
+                                                水滴汽车|巨量引擎<span>03-27</span><span>364149浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="p4">
+                                        <a href="/zhuanti/475.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/202003121330554418.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">《“战疫”之下，汽车经销商生存现状白皮书》</p>
+                                            <p class="Bullish3">
+                                                北方新媒体汽车联盟<span>03-12</span><span>1964738浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="p3">
+                                        <a href="/zhuanti/471.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/202003041424303700.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">315特别报道｜车市寒冬，“逆行者”才有春天</p>
+                                            <p class="Bullish3">
+                                                水滴汽车APP<span>03-04</span><span>433718浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="p2">
+                                        <a href="/zhuanti/468.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/202003031101157082.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">日内瓦车展取消，新车不“缺席”</p>
+                                            <p class="Bullish3">
+                                                水滴汽车<span>03-03</span><span>313523浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="p1">
+                                        <a href="/zhuanti/466.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/202002271924272777.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">奥利给，中国车 | “寒冬收官战”，眼界决定未来</p>
+                                            <p class="Bullish3">
+                                                水滴汽车<span>02-27</span><span>332140浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="p7">
+                                        <a href="/zhuanti/464.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/id_464_202002251221231181.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">奥利给，中国车 | 没有一个春天不会到来</p>
+                                            <p class="Bullish3">
+                                                水滴汽车<span>02-25</span><span>378020浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="/zhuanti/461.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/id_461_202002051913144492.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">转角处的光|疫情来袭，中国车市走向何方？</p>
+                                            <p class="Bullish3">
+                                                水滴汽车<span>02-04</span><span>1313112浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="/zhuanti/458.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/202001232336514638.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">全新一代瑞虎8 · 巡礼京张铁路</p>
+                                            <p class="Bullish3">
+                                                水滴汽车<span>01-23</span><span>861096浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="/zhuanti/454.html">
+                                            <img class="swiper-slide"
+                                                 onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                                 src="http://file.dripcar.cn/special/202001201200079620.jpg">
+                                        </a>
+                                        <div class="Bullish1">
+                                            <p class="Bullish2">B级车超限战</p>
+                                            <p class="Bullish3">
+                                                水滴汽车<span>01-20</span><span>1322986浏览</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <a class="prev btn" href="javascript:;"></a>
+                            <a class="next btn" href="javascript:;"></a>
+                            <div class="buttons">
+                                <a href="javascript:;"><span class="blue"></span></a>
+                                <a href="javascript:;"><span></span></a>
+                                <a href="javascript:;"><span></span></a>
+                                <a href="javascript:;"><span></span></a>
+                                <a href="javascript:;"><span></span></a>
+                                <a href="javascript:;"><span></span></a>
+                                <a href="javascript:;"><span></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53527.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/1579199157717.png">
+                            <p class="Say_car">
+                                <span class="authorName _username"
+                                      style="font-size: 16px; color: #333">辽宁车市资讯</span><span
+                                    class="authorOccupation _job">辽宁广播电视台《车汇天下》栏目组</span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">“做更强大的自己”——全新奥迪A4L国内首秀，预售价30.8万元起！</p>
+
+                                <div class="Review">
+                                    <p class="Review1">新车</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">706</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num"></span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031856235673.jpg?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53526.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/1583936028229.png">
+                            <p class="Say_car">
+                                <span class="authorName _username" style="font-size: 16px; color: #333">车讯精选</span><span
+                                    class="authorOccupation _job"></span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">未来车市大转变，豪华车需求下降，中低端车型却走俏？</p>
+
+                                <div class="Review">
+                                    <p class="Review1">新车</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">1180</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num"></span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031850041147.png?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53525.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/logo.png">
+                            <p class="Say_car">
+                                <span class="authorName _username" style="font-size: 16px; color: #333">汽车网评</span><span
+                                    class="authorOccupation _job">汽车</span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">一汽-大众中大型SUV已下线，这次的目标又在哪？</p>
+
+                                <div class="Review">
+                                    <p class="Review1">新车</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">848</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num"></span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031847474688.png;charset=utf-8?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53524.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://file.dripcar.cn/head_photo/201901281053209127.png?x-oss-process=style/photo_400_400">
+                            <p class="Say_car">
+                                <span class="authorName _username" style="font-size: 16px; color: #333">播报</span><span
+                                    class="authorOccupation _job">水滴汽车官方账号</span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">北京车展官宣，重新敲定9月25日举办</p>
+
+                                <div class="Review">
+                                    <p class="Review1">行业</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">835</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num"></span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031845142791.jpg?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53523.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/logo.png">
+                            <p class="Say_car">
+                                <span class="authorName _username" style="font-size: 16px; color: #333">汽车网评</span><span
+                                    class="authorOccupation _job">汽车</span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">售价接近但个性不同！本田皓影VS奥迪Q3，鸡头凤尾如何抉择？</p>
+
+                                <div class="Review">
+                                    <p class="Review1">导购</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">961</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num"></span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031839149552.png;charset=utf-8?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53522.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/1583351058542.png">
+                            <p class="Say_car">
+                                <span class="authorName _username" style="font-size: 16px; color: #333">每日侃车</span><span
+                                    class="authorOccupation _job"></span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">诚意满满 实力陡增 全新奥迪Q7限量版车型分析导购</p>
+
+                                <div class="Review">
+                                    <p class="Review1">导购</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">1343</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num">1评论</span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031821226882.jpeg?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53521.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/1582917649457.png">
+                            <p class="Say_car">
+                                <span class="authorName _username"
+                                      style="font-size: 16px; color: #333">梅卿快车道</span><span
+                                    class="authorOccupation _job"></span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">兰博基尼生产医用外科口罩及医用防护面罩</p>
+
+                                <div class="Review">
+                                    <p class="Review1">行业</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">961</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num"></span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031811341828.jpeg?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+                <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+                    <a class="_url" href="/zixun/53520.html" target="_blank">
+                        <div class="Media_person">
+                            <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                                 src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/1583936028229.png">
+                            <p class="Say_car">
+                                <span class="authorName _username" style="font-size: 16px; color: #333">车讯精选</span><span
+                                    class="authorOccupation _job"></span>
+                            </p>
+                            <div style="clear: both"></div>
+
+                        </div>
+                        <div class="content_car">
+                            <div class="content_car1">
+                                <p class="substance title">有索纳塔10和伊兰特7在，现代今年要杀出重围，并不难</p>
+
+                                <div class="Review">
+                                    <p class="Review1">新车</p>
+                                    <p class="Review2">04-03</p>
+                                    <p class="Review3"><span class="_read_num">2681</span>浏览</p>
+                                    <p class="Review3"><span class="_comment_num"></span></p>
+                                </div>
+
+
+                            </div>
+                            <div class="content_car2 _pic">
+                                <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                                     src="http://file.dripcar.cn/news/202004031805213035.png?x-oss-process=style/wap_list_pic">
+                            </div>
+
+                            <!--<div style="clear: both"></div>-->
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="load-style">
+                <p class="load-more" style="display: block;">浏览更多</p>
+                <p class="loading" style="display: none;">加载中...</p>
+                <p class="load-over" style="display: none;">无更多数据</p>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!--右侧-->
+
+    <div class="_mode _mode_right">
+        <!--发布栏-->
+        <div class="Point">
+            <ul>
+                <li>
+                    <a href="/zixun/fabu">
+                        <img class="hair" src="/Public/home/images/circle/hair.png">
+                        <p class="hair1">发资讯</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/shipin/fabu">
+                        <img class="hair" src="/Public/home/images/circle/transmission.png">
+                        <p class="hair1">传视频</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="/quanzi/fabu">
+                        <img class="hair" src="/Public/home/images/circle/write.png">
+                        <p class="hair1">写帖子</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--热门车型-->
+        <link href="/Public/home/css/indexV2/hotCarModel.css" rel="stylesheet">
+
+
+        <!--热门车型-->
+
+        <div class="models">
+            <div class="list_car">
+                <p class="vertical"></p>
+                <p class="hot">热门车型</p>
+                <div style="clear: both"></div>
+                <dl>
+                    <dt>
+                        <a href="/chexing/36064.html">
+                            <img style="width: 94px;height: 70px;"
+                                 onerror="this.src='/Public/home/images/index-list-default.png'"
+                                 src="http://file.dripcar.cn/autopic/style/201911221751173699.png">
+                        </a>
+                    </dt>
+                    <dd>
+                        <p class="corolla nowrap"><a href="/chexing/36064.html">威兰达 2020款 2.0L CVT四驱豪华版</a></p>
+                        <p class="corolla_1">20.68万</p>
+                    </dd>
+                    <div style="clear: both"></div>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="/chexing/36120.html">
+                            <img style="width: 94px;height: 70px;"
+                                 onerror="this.src='/Public/home/images/index-list-default.png'"
+                                 src="http://file.dripcar.cn/autopic/style/202001100958051583.png">
+                        </a>
+                    </dt>
+                    <dd>
+                        <p class="corolla nowrap"><a href="/chexing/36120.html">瑞虎7 2020款 1.5T 手动实力型</a></p>
+                        <p class="corolla_1">7.99万</p></dd>
+                    <div style="clear: both"></div>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="/chexing/36011.html">
+                            <img style="width: 94px;height: 70px;"
+                                 onerror="this.src='/Public/home/images/index-list-default.png'"
+                                 src="http://file.dripcar.cn/autopic/style/id_3448_201912311425399193.jpg">
+                        </a>
+                    </dt>
+                    <dd>
+                        <p class="corolla nowrap"><a href="/chexing/36011.html">发现运动版 2020款 249PS R-Dynamic SE</a></p>
+                        <p class="corolla_1">41.18万</p></dd>
+                    <div style="clear: both"></div>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="/chexing/36077.html">
+                            <img style="width: 94px;height: 70px;"
+                                 onerror="this.src='/Public/home/images/index-list-default.png'"
+                                 src="http://file.dripcar.cn/autopic/style/201911271425593796.png">
+                        </a>
+                    </dt>
+                    <dd>
+                        <p class="corolla nowrap"><a href="/chexing/36077.html">领航员 2020款 3.5T 林肯总统系列</a></p>
+                        <p class="corolla_1">119.8万</p></dd>
+                    <div style="clear: both"></div>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="/chexing/36047.html">
+                            <img style="width: 94px;height: 70px;"
+                                 onerror="this.src='/Public/home/images/index-list-default.png'"
+                                 src="http://file.dripcar.cn/autopic/style/201911211717199373.jpg">
+                        </a>
+                    </dt>
+                    <dd>
+                        <p class="corolla nowrap"><a href="/chexing/36047.html">吉利ICON 2020款 300T i7 BSG</a></p>
+                        <p class="corolla_1">11.88万</p></dd>
+                    <div style="clear: both"></div>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="/chexing/36038.html">
+                            <img style="width: 94px;height: 70px;"
+                                 onerror="this.src='/Public/home/images/index-list-default.png'"
+                                 src="http://file.dripcar.cn/autopic/style/201911211818031432.jpg">
+                        </a>
+                    </dt>
+                    <dd>
+                        <p class="corolla nowrap"><a href="/chexing/36038.html">帝豪GSe 2020款 600 领尚型</a></p>
+                        <p class="corolla_1">13.69万</p></dd>
+                    <div style="clear: both"></div>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="/chexing/35940.html">
+                            <img style="width: 94px;height: 70px;"
+                                 onerror="this.src='/Public/home/images/index-list-default.png'"
+                                 src="http://file.dripcar.cn/autopic/style/id_3279_201912231232176105.jpg">
+                        </a>
+                    </dt>
+                    <dd>
+                        <p class="corolla nowrap"><a href="/chexing/35940.html">雷克萨斯LM 2020款 300h 四座御世版</a></p>
+                        <p class="corolla_1">146.6万</p></dd>
+                    <div style="clear: both"></div>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="/chexing/36085.html">
+                            <img style="width: 94px;height: 70px;"
+                                 onerror="this.src='/Public/home/images/index-list-default.png'"
+                                 src="http://file.dripcar.cn/autopic/style/201911251324472495.png">
+                        </a>
+                    </dt>
+                    <dd>
+                        <p class="corolla nowrap"><a href="/chexing/36085.html">荣威Ei5 2020款 豪华版</a></p>
+                        <p class="corolla_1">14.08万</p></dd>
+                    <div style="clear: both"></div>
+                </dl>
+            </div>
+        </div>
+
+
+        <!--业内大咖-->
+        <link href="/Public/home/css/indexV2/bigShot.css" rel="stylesheet">
+
+
+        <div class="_mode _mode_shot">
+            <div class="Industry">
+                <p class="vertical"></p>
+                <p class="hot">业内大咖</p>
+                <div style="clear: both"></div>
+                <dl style="border-bottom: 1px solid #e6e6e6; margin-top: 10px;">
+                    <dt>
+                        <a href="/geren/1687.html"><img onerror="this.src='/Public/home/images/default_photo.png'"
+                                                        src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/head_photo/iOS_201712071248354547.jpg"></a>
+                    </dt>
+                    <dd>
+                        <p class="ren"><a href="/geren/1687.html">马德张侃车</a></p>
+                        <p class="corolla_2 nowrap"><a href="/geren/1687.html">记者 毒舌评论员</a></p>
+                    </dd>
+                </dl>
+                <dl style="border-bottom: 1px solid #e6e6e6; margin-top: 10px;">
+                    <dt>
+                        <a href="/geren/1967.html"><img onerror="this.src='/Public/home/images/default_photo.png'"
+                                                        src="http://file.dripcar.cn/head_photo/android_1504509996474.jpg"></a>
+                    </dt>
+                    <dd>
+                        <p class="ren"><a href="/geren/1967.html">车哥们</a></p>
+                        <p class="corolla_2 nowrap"><a href="/geren/1967.html"></a></p>
+                    </dd>
+                </dl>
+                <dl style="border-bottom: 1px solid #e6e6e6; margin-top: 10px;">
+                    <dt>
+                        <a href="/geren/3016.html"><img onerror="this.src='/Public/home/images/default_photo.png'"
+                                                        src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/head_photo/iOS_201712071735338673.jpg"></a>
+                    </dt>
+                    <dd>
+                        <p class="ren"><a href="/geren/3016.html">苏老师说车</a></p>
+                        <p class="corolla_2 nowrap"><a href="/geren/3016.html">汽车媒体人</a></p>
+                    </dd>
+                </dl>
+                <dl style="border-bottom: 1px solid #e6e6e6; margin-top: 10px;">
+                    <dt>
+                        <a href="/geren/3091.html"><img onerror="this.src='/Public/home/images/default_photo.png'"
+                                                        src="http://file.dripcar.cn/head_photo/android_1513661520090.jpg"></a>
+                    </dt>
+                    <dd>
+                        <p class="ren"><a href="/geren/3091.html">AutoR智驾</a></p>
+                        <p class="corolla_2 nowrap"><a href="/geren/3091.html">第一家关注汽车科技垂直类汽车媒体</a></p>
+                    </dd>
+                </dl>
+                <dl style="border-bottom: 1px solid #e6e6e6; margin-top: 10px;">
+                    <dt>
+                        <a href="/geren/3141.html"><img onerror="this.src='/Public/home/images/default_photo.png'"
+                                                        src="http://file.dripcar.cn/head_photo/android_1519730830361.jpg"></a>
+                    </dt>
+                    <dd>
+                        <p class="ren"><a href="/geren/3141.html">潘祖杰</a></p>
+                        <p class="corolla_2 nowrap"><a href="/geren/3141.html">资深汽车主编</a></p>
+                    </dd>
+                </dl>
+                <dl style="border-bottom: 1px solid #e6e6e6; margin-top: 10px;">
+                    <dt>
+                        <a href="/geren/3165.html"><img onerror="this.src='/Public/home/images/default_photo.png'"
+                                                        src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/LOGO.jpg"></a>
+                    </dt>
+                    <dd>
+                        <p class="ren"><a href="/geren/3165.html">鬼斗车</a></p>
+                        <p class="corolla_2 nowrap"><a href="/geren/3165.html">资深汽车记者</a></p>
+                    </dd>
+                </dl>
+                <dl style="border-bottom: 1px solid #e6e6e6; margin-top: 10px;">
+                    <dt>
+                        <a href="/geren/3171.html"><img onerror="this.src='/Public/home/images/default_photo.png'"
+                                                        src="http://wanka-chemo.oss-cn-beijing.aliyuncs.com/%E8%A1%97%E6%8B%8D%E9%85%B7%E8%BD%A62.png"></a>
+                    </dt>
+                    <dd>
+                        <p class="ren"><a href="/geren/3171.html">街拍酷车</a></p>
+                        <p class="corolla_2 nowrap"><a href="/geren/3171.html">资深汽车媒体人</a></p>
+                    </dd>
+                </dl>
+                <dl style="border-bottom: 1px solid #e6e6e6; margin-top: 10px;">
+                    <dt>
+                        <a href="/geren/784.html"><img onerror="this.src='/Public/home/images/default_photo.png'"
+                                                       src="http://file.dripcar.cn/head_photo/201912061715056438.jpeg?x-oss-process=style/photo_400_400"></a>
+                    </dt>
+                    <dd>
+                        <p class="ren"><a href="/geren/784.html">水滴 崔建伟</a></p>
+                        <p class="corolla_2 nowrap"><a href="/geren/784.html">媒体记者</a></p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+<img class="slide" style="display: block;" src="/Public/home/images/slide.png">
+
+<!--热点精选-->
+<div class="Hot_spotss" style="display: none">
+    <div class="Hot_spot">
+        <div class="swiper-container sub_model" id="sub_model">
+            <div class="Hot_spot1">
+                <img src="/Public/home/images/indexV2/redW.png">
+                <p>热点精选</p>
+            </div>
+            <a style="display: block;width: 100%;height: 100%" href="/zhuanti.html">
+                <div class="Hot_spot2">
+                    <p>更多</p>
+                    <img src="/Public/home/images/right.png">
+                </div>
+            </a>
+            <div style="clear: both"></div>
+
+            <div class="box">
+                <div class="list">
+
+                    <ul>
+                        <li>
+                            <a href="/zhuanti/482.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/202003311333288801.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">突破存量市场 聚焦全球市场</p>
+                                <p class="Bullish3">
+                                    水滴汽车<span>03-31</span><span>1235441浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/480.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/202003271513049264.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">“逆行者”的春天已来</p>
+                                <p class="Bullish3">
+                                    水滴汽车|巨量引擎<span>03-27</span><span>364149浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/475.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/202003121330554418.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">《“战疫”之下，汽车经销商生存现状白皮书》</p>
+                                <p class="Bullish3">
+                                    北方新媒体汽车联盟<span>03-12</span><span>1964738浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/471.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/202003041424303700.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">315特别报道｜车市寒冬，“逆行者”才有春天</p>
+                                <p class="Bullish3">
+                                    水滴汽车APP<span>03-04</span><span>433718浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/468.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/202003031101157082.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">日内瓦车展取消，新车不“缺席”</p>
+                                <p class="Bullish3">
+                                    水滴汽车<span>03-03</span><span>313523浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/466.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/202002271924272777.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">奥利给，中国车 | “寒冬收官战”，眼界决定未来</p>
+                                <p class="Bullish3">
+                                    水滴汽车<span>02-27</span><span>332140浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/464.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/id_464_202002251221231181.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">奥利给，中国车 | 没有一个春天不会到来</p>
+                                <p class="Bullish3">
+                                    水滴汽车<span>02-25</span><span>378020浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/461.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/id_461_202002051913144492.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">转角处的光|疫情来袭，中国车市走向何方？</p>
+                                <p class="Bullish3">
+                                    水滴汽车<span>02-04</span><span>1313112浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/458.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/202001232336514638.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">全新一代瑞虎8 · 巡礼京张铁路</p>
+                                <p class="Bullish3">
+                                    水滴汽车<span>01-23</span><span>861096浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/zhuanti/454.html">
+                                <img class="swiper-slide"
+                                     onerror="this.src='/Public/home/images/index-list-default.png'" alt=""
+                                     src="http://file.dripcar.cn/special/202001201200079620.jpg">
+                            </a>
+                            <div class="Bullish1">
+                                <p class="Bullish2">B级车超限战</p>
+                                <p class="Bullish3">
+                                    水滴汽车<span>01-20</span><span>1322986浏览</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <a class="prev btn" href="javascript:;"></a>
+                <a class="next btn" href="javascript:;"></a>
+                <div class="buttons">
+                    <a href="javascript:;"><span></span></a>
+                    <a href="javascript:;"><span class="blue"></span></a>
+                    <a href="javascript:;"><span></span></a>
+                    <a href="javascript:;"><span></span></a>
+                    <a href="javascript:;"><span></span></a>
+                    <a href="javascript:;"><span></span></a>
+                    <a href="javascript:;"><span></span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--热点精选结束-->
+
+<!-- 模板 -->
+<div id="model" style="display: none;">
+
+    <link href="/Public/home/css/public/_mode_news.css" rel="stylesheet">
+    <div class="_mode _mode_news" style=" border-bottom: 1px solid #e6e6e6;">
+        <a class="_url" href="" target="_blank">
+            <div class="Media_person">
+                <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                     src="/Public/home/images/default_photo.png">
+                <p class="Say_car">
+                    <span class="authorName _username" style="font-size: 16px; color: #333">加载中..</span><span
+                        class="authorOccupation _job">,加载中..</span>
+                </p>
+                <div style="clear: both"></div>
+
+            </div>
+            <div class="content_car">
+                <div class="content_car1">
+                    <p class="substance title"> 加载中...</p>
+
+                    <div class="Review">
+                        <p class="Review1">资讯</p>
+                        <p class="Review2">07-06</p>
+                        <p class="Review3"><span class="_read_num">629</span>浏览</p>
+                        <p class="Review3"><span class="_comment_num">450评论</span></p>
+                    </div>
+
+
+                </div>
+                <div class="content_car2 _pic">
+                    <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                         src="/Public/home/images/index-list-default.png">
+                </div>
+
+                <!--<div style="clear: both"></div>-->
+            </div>
+        </a>
+    </div>
+    <link href="/Public/home/css/public/_mode_inte.css" rel="stylesheet">
+    <div class="_mode1 _mode_inte" style=" border-bottom: 1px solid #e6e6e6;">
+        <a class="_url" href="" target="_blank">
+            <div class="Media_person">
+                <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                     src="/Public/home/images/default_photo.png">
+                <p class="Say_car">
+                    <span class="authorName _username" style="font-size: 14px; color: #0b0b0b">加载中..</span><span
+                        class="authorOccupation _job">加载中..</span>
+                </p>
+                <div style="clear: both"></div>
+
+            </div>
+            <div class="content_car">
+                <div class="content_car1">
+                    <p class="substance title">加载中...</p>
+                    <p style="height:60px;height: 60px;line-height: 54px;color: #f96369;">
+                        <span class="_money">9.5万元</span>
+                        <span class="_conname" style="color: #999;font-size: 13px;padding-left: 20px;">惠买车</span>
+                    </p>
+
+                    <div class="Review">
+                        <p class="Review1">值乎</p>
+                        <p class="Review2">07-06</p>
+                        <p class="Review3"><span class="_good_num">100</span>好评</p>
+                        <p class="Review3"><span class="_comment_num">450</span>评论</p>
+                    </div>
+                </div>
+                <div class="content_car2">
+                    <img onerror="this.src='/Public/home/images/index-list-default.png'"
+                         src="/Public/home/images/index-list-default.png">
+                </div>
+
+                <div style="clear: both"></div>
+            </div>
+        </a>
+    </div>
+    <link href="/Public/home/css/public/_mode_ganda.css" rel="stylesheet">
+    <div class="_mode _mode_ganda" style=" border-bottom: 1px solid #e6e6e6;">
+        <a class="_url" href="" target="_blank">
+            <div class="Media_person">
+                <img class="say_1" onerror="this.src='/Public/home/images/default_photo.png'" alt=""
+                     src="/Public/home/images/default_photo.png">
+                <p class="Say_car">
+                    <span class="authorName _username" style="font-size: 14px; color: #0b0b0b">加载中...</span><span
+                        class="authorOccupation _job">加载中...</span>
+                </p>
+                <div style="clear: both"></div>
+            </div>
+            <div class="content_car">
+                <div class="content_car1">
+                    <p class="substance_1 title">加载中...</p>
+                    <div style="clear: both"></div>
+                    <div class="Voice">
+                        <img class="play_voice" src="/Public/home/images/indexV2/play_voice.png">
+                        <img class="play_voice1" src="/Public/home/images/indexV2/voice.png">
+                        <p class="number"><span class="ans_voice_second">47</span><span>''</span></p>
+                        <div style="clear: both"></div>
+                    </div>
+
+                    <div class="Review">
+                        <p class="Review1">问答</p>
+                        <p class="Review2">07-06</p>
+                        <p class="Review3"><span class="_listen_num _read_num">652</span><span>人听过</span></p>
+                        <p class="Review3"><span class="_praise_num">450</span><span>点赞</span></p>
+                    </div>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </a>
+    </div>
+
+</div>
+<!--友情链接-------商业模块-->
+
+<div class="friendLink">
+    <div class="content">
+        <div class="header_1">
+            <ul class="clearfix">
+                <li class="raise_title active" style="padding-left:5px;">
+                    <a href="javaScript:void(0)">友情提示</a>
+                </li>
+                <li class="raise_title">
+                    <a href="javaScript:void(0)">热门品牌</a>
+                </li>
+            </ul>
+        </div>
+        <div id="showCurrent" style="padding-top: 20px;">
+            <ul class="friendship">
+                <li style="display: none;">|</li>
+                <li><a href="http://auto.cyol.com/" target="_blank">中青在线-汽车频道</a></li>
+                <li>|</li>
+                <li><a href="http://www.xiaoshouyi.com" target="_blank">CRM系统</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/download.html" target="_blank">汽车APP</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/xinche/yugao.html" target="_blank">最新上市汽车</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/" target="_blank">好车</a></li>
+                <li>|</li>
+                <li><a href="http://www.kubikeji.com/" target="_blank">APP开发公司</a></li>
+                <li>|</li>
+                <li><a href="http://www.zhiqiapp.com" target="_blank">深圳APP开发</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/quanzi/all" target="_blank">全部圈子</a></li>
+                <li>|</li>
+                <li><a href="http://www.dichegou.com/" target="_blank">4S店管理系统</a></li>
+                <li>|</li>
+                <li><a href="http://city.emao.com/" target="_blank">汽车城市站</a></li>
+                <div style="clear:both"></div>
+            </ul>
+        </div>
+        <!--友情提示-->
+        <div id="indexhtml" style="margin-bottom:0;display:none;">
+            <ul class="friendship">
+                <li style="display: none;">|</li>
+                <li><a href="http://auto.cyol.com/" target="_blank">中青在线-汽车频道</a></li>
+                <li>|</li>
+                <li><a href="http://www.xiaoshouyi.com" target="_blank">CRM系统</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/download.html" target="_blank">汽车APP</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/xinche/yugao.html" target="_blank">最新上市汽车</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/" target="_blank">好车</a></li>
+                <li>|</li>
+                <li><a href="http://www.kubikeji.com/" target="_blank">APP开发公司</a></li>
+                <li>|</li>
+                <li><a href="http://www.zhiqiapp.com" target="_blank">深圳APP开发</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/quanzi/all" target="_blank">全部圈子</a></li>
+                <li>|</li>
+                <li><a href="http://www.dichegou.com/" target="_blank">4S店管理系统</a></li>
+                <li>|</li>
+                <li><a href="http://city.emao.com/" target="_blank">汽车城市站</a></li>
+                <div style="clear:both"></div>
+            </ul>
+        </div>
+        <!--热门品牌-->
+        <div id="kada" style="display:none;">
+            <ul class="friendship">
+                <li style="display: none;">|</li>
+                <li><a href="http://www.dripcar.com/pinpai/4.html">长安</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/5.html">长城</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/190.html">北汽新能源</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/18.html">奇瑞</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/69.html">英菲尼迪</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/84.html">吉利</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/80.html">东风</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/3.html">比亚迪</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/36.html">奥迪</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/76.html">宝马</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/100.html">广汽传祺</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/225.html">广汽新能源</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/77.html">马自达</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/41.html">大众</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/170.html">哈弗</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/19.html">起亚</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/38.html">奔驰</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/45.html">丰田</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/46.html">福特</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/67.html">现代</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/75.html">本田</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/68.html">雪佛兰</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/23.html">雪铁龙</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/63.html">日产</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/81.html">别克</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/30.html">荣威</a></li>
+                <li>|</li>
+                <li><a href="http://www.dripcar.com/pinpai/103.html">五菱</a></li>
+                <div style="clear:both"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--尾部-->
+<div class="foot" style="height: 154px;">
+    <div class="meet" style="width:1100px;margin:0 auto">
+        <div style="float:left">
+            <ul>
+                <li>
+                    <a class="about_me a_hover" href="/company/about_us.html">关于我们</a></li>
+                <li>
+                    <a class="about_me a_hover" href="/company/join_us.html">加入我们</a></li>
+                <li>
+                    <a class="about_me a_hover" href="/company/problems.html">常见问题</a>
+                </li>
+                <li>
+                    <a class="about_me a_hover" href="/company/partner.html">合作伙伴</a>
+                </li>
+                <li>
+                    <a class="about_me a_hover" href="/company/business.html" target="_blank">营业执照</a>
+                </li>
+                <li>
+                    <a class="about_me a_hover" href="http://www.beian.miit.gov.cn/"
+                       target="_blank">京ICP备17030485号-2</a>
+                </li>
+                <li>
+                    <a class="about_me a_hover" href="/company/culture.html" target="_blank">网络文化经营许可证</a>
+                </li>
+                <li>
+                    <a class="about_me a_hover" href="/company/telecom.html" target="_blank">增值电信业务经营许可证</a>
+                </li>
+            </ul>
+            <div style="clear:both"></div>
+            <ol style="padding-bottom: 20px;height: 48px;">
+                <li>水滴汽车</li>
+                <li>版权所有</li>
+                <li>北京水滴交互网络科技有限公司</li>
+            </ol>
+            <div>
+                <a style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"
+                   href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102003639"
+                   target="_blank"><img style="float:left;" src="/Public/home/images/beian.png">
+                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#7f8299;">京公网安备
+                        11010102003639号</p></a>
+            </div>
+        </div>
+        <div class="foot_1">
+            <a href="/download.html">
+                <img class="pic_15" src="/Public/home/images/pic_15.png">
+                <img class="pic_16" src="/Public/home/images/pic_16.png">
+            </a>
+            <img class="pic_17" src="/Public/home/images/pic_17.png">
+            <img class="pic_19" src="/Public/home/images/pic_19.png">
+        </div>
+    </div>
+</div>
+
+
+<script src="/Public/common/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="/Public/home/js/circle/swiper.jquery.min.js" type="text/javascript"></script>
+
+<script>
+    var sub_position = parseInt('2');
+    var isHaveSub = '1';
+    var _request_obj = $('#index-list');
+    var _request_url = "/Home/index/ajaxNewList.html";
+</script>
+<script src="/Public/home/v2/js/indexV2/loadData.js" type="text/javascript"></script>
+<script src="/Public/home/v2/js/indexV2/index.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    var isShow = "1";
+    if (isShow == 1) {
+        $('.friendLink').show();
+    }
+    var swiper = new Swiper('.swiper-container1', {
+        pagination: '.swiper-pagination1',
+        paginationClickable: true,
+        autoplay: 3000,
+        width: window.innerWidth,
+        spaceBetween: 0,
+        autoplayDisableOnInteraction: false,
+    });
+
+    $(".pic_17").hover(function () {
+        if ($(".pic_19").is(":hidden")) {
+            $(".pic_19").show();
+            $(this).attr("src", "/Public/home/images/pic_21.png");
+        } else {
+            $(".pic_19").hide();
+            $(this).attr("src", "/Public/home/images/pic_17.png");
+        }
+    });
+    $(".pic_15").mouseover(function () {
+        $(this).attr("src", "/Public/home/images/pic.png");
+    }).mouseout(function () {
+        $(this).attr("src", "/Public/home/images/pic_15.png");
+    })
+    $(".pic_16").mouseover(function () {
+        $(this).attr("src", "/Public/home/images/pic1.png");
+    }).mouseout(function () {
+        $(this).attr("src", "/Public/home/images/pic_16.png");
+    })
+
+    //jquery 移动到顶部
+    $(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 100) {
+                $('.slide').fadeIn(300);
+            } else {
+                $('.slide').fadeOut(300);
+            }
+        });
+        $('.slide').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+    });
+
+    $(window).trigger('scroll');
+    $(window).scroll(function () {
+        var _height = $(".client").height();
+        var top = $(window).scrollTop();
+        if (top > _height) {
+            $(".pressing").css({
+                position: "fixed",
+                "z-index": 39,
+                top: 0
+            });
+            $('.pressing-replace').show();
+        } else if (top < _height) {
+            $(".pressing").css({
+                position: "relative",
+                left: 0
+            });
+            $('.pressing-replace').hide();
+        }
+    });
+
+    $(function () {
+        $("#showCurrent").empty().append($("#indexhtml").html());
+        $(".raise_title").on("click", function () {
+            $(this).addClass("active").siblings().removeClass("active");
+            if ($(this).index() == "1") {
+                $("#showCurrent").empty().append($("#kada").html());
+            } else if ($(this).index() == "2") {
+                $("#showCurrent").empty().append($("#qingbao").html());
+            } else {
+                $("#showCurrent").empty().append($("#indexhtml").html());
+            }
+        });
+    });
+
+    //轮播
+    var $a = $(".buttons a");
+    var $s = $(".buttons span");
+    var cArr = ["p7", "p6", "p5", "p4", "p3", "p2", "p1"];
+    var index = 0;
+    $(".next").click(
+        function () {
+            nextimg();
+        }
+    );
+    $(".prev").click(
+        function () {
+            previmg();
+        }
+    );
+
+    //上一张
+    function previmg() {
+        cArr.unshift(cArr[6]);
+        cArr.pop();
+        //i是元素的索引，从0开始
+        //e为当前处理的元素
+        //each循环，当前处理的元素移除所有的class，然后添加数组索引i的class
+        $(".box li").each(function (i, e) {
+            $(e).removeClass().addClass(cArr[i]);
+        });
+        index--;
+        if (index < 0) {
+            index = 6;
+        }
+        show();
+    }
+
+    //下一张
+    function nextimg() {
+        cArr.push(cArr[0]);
+        cArr.shift();
+        $(".box li").each(function (i, e) {
+            $(e).removeClass().addClass(cArr[i]);
+        })
+        index++;
+        if (index > 6) {
+            index = 0;
+        }
+        show();
+    }
+
+    //通过底下按钮点击切换
+    $a.each(function () {
+        $(this).click(function () {
+            var myindex = $(this).index();
+            var b = myindex - index;
+            if (b == 0) {
+                return;
+            } else if (b > 0) {
+                /*
+                 * splice(0,b)的意思是从索引0开始,取出数量为b的数组
+                 * 因为每次点击之后数组都被改变了,所以当前显示的这个照片的索引才是0
+                 * 所以取出从索引0到b的数组,就是从原本的这个照片到需要点击的照片的数组
+                 * 这时候原本的数组也将这部分数组进行移除了
+                 * 再把移除的数组添加的原本的数组的后面
+                 */
+                var newarr = cArr.splice(0, b);
+                cArr = $.merge(cArr, newarr);
+                $("li").each(function (i, e) {
+                    $(e).removeClass().addClass(cArr[i]);
+                })
+                index = myindex;
+                show();
+            } else if (b < 0) {
+                /*
+                 * 因为b<0,所以取数组的时候是倒序来取的,也就是说我们可以先把数组的顺序颠倒一下
+                 * 而b现在是负值,所以取出索引0到-b即为需要取出的数组
+                 * 也就是从原本的照片到需要点击的照片的数组
+                 * 然后将原本的数组跟取出的数组进行拼接
+                 * 再次倒序,使原本的倒序变为正序
+                 */
+                cArr.reverse();
+                var oldarr = cArr.splice(0, -b)
+                cArr = $.merge(cArr, oldarr);
+                cArr.reverse();
+                $("li").each(function (i, e) {
+                    $(e).removeClass().addClass(cArr[i]);
+                })
+                index = myindex;
+                show();
+            }
+        })
+    })
+
+    //改变底下按钮的背景色
+    function show() {
+        $($s).eq(index).addClass("blue").parent().siblings().children().removeClass("blue");
+    }
+
+    //点击class为p2的元素触发上一张照片的函数
+    $(document).on("click", ".p2", function () {
+        previmg();
+        return false;//返回一个false值，让a标签不跳转
+    });
+
+    //点击class为p4的元素触发下一张照片的函数
+    $(document).on("click", ".p4", function () {
+        nextimg();
+        return false;
+    });
+
+    //			鼠标移入box时清除定时器
+    $(".box").mouseover(function () {
+        clearInterval(timer);
+    })
+
+    //			鼠标移出box时开始定时器
+    $(".box").mouseleave(function () {
+        timer = setInterval(nextimg, 4000);
+    })
+
+    //			进入页面自动开始定时器
+    timer = setInterval(nextimg, 4000);
+
+
+</script>
+<div style="display:none">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b61adebfa8abb1e3dfc1fce2db8c7b63";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+
+</body>
+</html>
